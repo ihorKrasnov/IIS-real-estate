@@ -3,7 +3,7 @@
 
     <!-- Навігаційні кнопки -->
     <span class="spacer"></span>
-    <ng-container>
+    <ng-container *ngIf="authService.isAuthenticated()">
         <button mat-button routerLink="/estates" routerLinkActive="active-link">Estates</button>
         <button mat-button routerLink="/clients" routerLinkActive="active-link">Clients</button>
     </ng-container>
