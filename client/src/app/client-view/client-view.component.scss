@@ -1,0 +1,27 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  mat-form-field {
+    display: block;
+    width: 100%;
+    color: white; 
+  }
+  
+  .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  mat-card {
+    padding: 16px;
+  }
+  
+  button[type="submit"] {
+    margin-right: 8px;
+  }
+  

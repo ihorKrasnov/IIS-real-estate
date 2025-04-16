@@ -1,0 +1,19 @@
+<div class="map-container">
+  <google-map height="100%" width="100%" [center]="center" [zoom]="zoom" [options]="mapOptions">
+    <map-marker
+      *ngFor="let marker of markers"
+      [position]="marker"
+      [label]="marker.label ?? ''"
+      (mapClick)="openInfo(marker, markerRef)"
+      #markerRef="mapMarker">
+    </map-marker>
+
+    <map-info-window>
+      <div class="text-sm bg-white-800 p-4 rounded-lg shadow-lg" style="color: black;">
+        <strong>{{ selectedMarker?.title }}</strong><br>
+        💸 {{ selectedMarker?.price! | currencyFormat }}   <br>
+        <button mat-raised-button style="text-decoration: underline; cursor: pointer;" color="primary" (click)="goToEstate(selectedMarker!)">View Details</button>
+      </div>
+    </map-info-window>
+  </google-map>
+</div>

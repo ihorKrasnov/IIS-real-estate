@@ -1,0 +1,32 @@
+<div class="flex items-center justify-center min-h-screen">
+    <form (ngSubmit)="login()" class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+      <h2 class="text-2xl text-black font-bold mb-6 text-center">Log in</h2>
+  
+      <div class="mb-4">
+        <label class="block mb-1 text-black font-medium">Username</label>
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="loginForm.username"
+          class="w-full text-black px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-gray-500"
+          required
+        />
+      </div>
+  
+      <div class="mb-6">
+        <label class="block mb-1 text-black font-medium">Password</label>
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="loginForm.password"
+          class="w-full text-black px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+  
+      <div class="flex justify-end mb-4">
+        <button mat-raised-button color="primary" type="submit">Log in</button>
+      </div>
+    </form>
+  </div>
+  

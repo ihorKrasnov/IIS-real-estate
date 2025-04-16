@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\065c177a-dc4a-4c25-bf34-52adcb0be73e.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\065c177a-dc4a-4c25-bf34-52adcb0be73e.png"
+    },
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\245bf08d-0497-4d5a-923f-db0962cb83b2.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\245bf08d-0497-4d5a-923f-db0962cb83b2.png"
+    },
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\3a579247-7b1b-4928-b732-875aa2ddb205.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\3a579247-7b1b-4928-b732-875aa2ddb205.png"
+    },
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\416bade6-1f37-4abc-8ca7-2d59f20d4b99.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\416bade6-1f37-4abc-8ca7-2d59f20d4b99.png"
+    },
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\4c7249ac-cdd8-42ca-8978-476b86457e3c.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\4c7249ac-cdd8-42ca-8978-476b86457e3c.png"
+    },
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\b7de4583-5eed-4256-bf0b-698d93c48469.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\b7de4583-5eed-4256-bf0b-698d93c48469.png"
+    },
+    {
+      "Id": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\uploads\\estate_images\\ba46890f-2a61-4fa2-ad50-f3ff8ac709b9.png",
+      "PackagePath": "staticwebassets\\uploads\\estate_images\\ba46890f-2a61-4fa2-ad50-f3ff8ac709b9.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.api.props",
+      "PackagePath": "build\\api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.api.props",
+      "PackagePath": "buildMultiTargeting\\api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.api.props",
+      "PackagePath": "buildTransitive\\api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

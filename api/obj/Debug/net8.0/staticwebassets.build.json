@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "RYxL4DaFu+NM3WB4aKhmtxiFcKmJ9oZmwSkPtlury0M=",
+  "Source": "api",
+  "BasePath": "_content/api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "api\\wwwroot",
+      "Source": "api",
+      "ContentRoot": "C:\\Users\\ihork\\Documents\\SSU\\IT-2\\IntegratedInformationSystem\\1.Reports\\курсова\\IIS-real-estate\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

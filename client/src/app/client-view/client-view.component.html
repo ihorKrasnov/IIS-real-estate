@@ -1,0 +1,36 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-4 text-white">Client Details</h1>
+  <mat-card class="shadow-lg p-4 bg-gray-800">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="mb-4">
+        <mat-label class="mat-primary">First Name</mat-label>
+        <p class="text-white">{{ client.firstName }}</p>
+      </div>
+
+      <div class="mb-4">
+        <mat-label class="mat-primary">Last Name</mat-label>
+        <p class="text-white">{{ client.lastName }}</p>
+      </div>
+
+      <div class="mb-4">
+        <mat-label class="mat-primary">Email</mat-label>
+        <p class="text-white">{{ client.email }}</p>
+      </div>
+
+      <div class="mb-4">
+        <mat-label class="mat-primary">Phone Number</mat-label>
+        <p class="text-white">{{ client.phoneNumber }}</p>
+      </div>
+
+      <div class="mb-4">
+        <mat-label class="mat-primary">Client Type</mat-label>
+        <p class="text-white">{{ client.clientType === 0 ? 'Individual' : 'Company' }}</p>
+      </div>
+    </div>
+
+    <div class="flex justify-between mt-4">
+      <button mat-raised-button color="primary" (click)="editClient(client.id)">Edit Client</button>
+      <button mat-raised-button color="accent" (click)="router.navigate(['/clients'])">Back to List</button>
+    </div>
+  </mat-card>
+</div>

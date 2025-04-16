@@ -1,0 +1,13 @@
+<google-map
+  height="400px"
+  width="100%"
+  [center]="center"
+  [zoom]="zoom"
+  (mapClick)="mapClicked($event)">
+  <map-marker *ngIf="markerPosition" [position]="markerPosition"></map-marker>
+</google-map>
+
+<div style="margin-top: 1rem; text-align: right;">
+  <button mat-raised-button color="accent" (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="confirm()" [disabled]="!markerPosition">Apply</button>
+</div>

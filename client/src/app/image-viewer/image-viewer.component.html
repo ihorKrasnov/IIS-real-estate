@@ -1,0 +1,31 @@
+<div class="image-viewer">
+    <ng-container *ngIf="images && images.length > 0; else noImages">
+          <!-- Відображення поточного зображення -->
+    <div class="image-container">
+      <img [src]="getImgUrl(currentImageIndex)" alt="Estate Image" class="image" />
+    </div>
+  
+    <!-- Кнопки для навігації -->
+    <div class="image-navigation">
+      <button (click)="prevImage()" [disabled]="images.length <= 1">Previous</button>
+      <button (click)="nextImage()" [disabled]="images.length <= 1">Next</button>
+    </div>
+  
+    <!-- Мініатюри зображень -->
+    <div class="image-thumbnails">
+      <div *ngFor="let image of images; let i = index" class="thumbnail-container">
+        <img
+          [src]="getImgUrl(i)"
+          [alt]="'Thumbnail ' + (i + 1)"
+          class="thumbnail"
+          [class.active]="i === currentImageIndex"
+          (click)="setActiveImage(i)"
+        />
+      </div>
+    </div>
+    </ng-container>
+    <ng-template #noImages>
+      <p>No images available.</p>
+    </ng-template>
+</div>
+  

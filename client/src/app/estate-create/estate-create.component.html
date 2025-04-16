@@ -1,0 +1,84 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-4 text-white">{{ isEditMode ? 'Edit Estate' : 'Create New Estate' }}</h1>
+  <mat-card class="shadow-lg p-4 bg-gray-800">
+    <form (ngSubmit)="saveEstate()">
+      
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Title</mat-label>
+        <input matInput [(ngModel)]="estate.title" name="title" required>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Description</mat-label>
+        <textarea matInput [(ngModel)]="estate.description" name="description" required></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Price (UAH)</mat-label>
+        <input matInput type="number" [(ngModel)]="estate.price" name="price" required>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Area (m²)</mat-label>
+        <input matInput type="number" [(ngModel)]="estate.area" name="area" required>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Address</mat-label>
+        <input matInput [(ngModel)]="estate.address" name="address" required>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">City</mat-label>
+        <input matInput  [(ngModel)]="estate.city" name="city" required>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Region</mat-label>
+        <input matInput [(ngModel)]="estate.region" name="region" required>
+      </mat-form-field>
+
+      <mat-form-field class="mb-4 w-full">
+        <mat-label class="mat-primary">Estate Type</mat-label>
+        <mat-select [(ngModel)]="estate.type" name="type" required>
+          <mat-option [value]="1">Apartment</mat-option>
+          <mat-option [value]="2">House</mat-option>
+          <mat-option [value]="3">Commercial</mat-option>
+          <mat-option [value]="4">Land</mat-option>
+          <mat-option [value]="5">Warehouse</mat-option>
+          <mat-option [value]="6">Garage</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="mb-4">
+        <button mat-raised-button color="warn" type="button" (click)="selectLocationOnMap()">
+          Add map marker
+        </button>
+
+        <div *ngIf="estate.latitude && estate.longitude" class="text-white mt-2 text-sm">
+          📍 Latitude: {{ estate.latitude }}, Longitude: {{ estate.longitude }}
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="text-white block mb-2">Upload Images</label>
+        <input 
+          style="cursor: pointer;" 
+          type="file" 
+          accept="image/*" 
+          multiple 
+          (change)="onImageSelected($event)" 
+          class="text-white"
+        >
+        <div *ngIf="selectedImages.length > 0" class="text-sm text-white mt-2">
+          Selected: {{ selectedImages.length }} image(s)
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <button mat-raised-button color="primary" type="submit">{{ isEditMode ? 'Save Changes' : 'Save Estate' }}</button>
+        <button mat-raised-button color="accent" (click)="router.navigate(['/estates'])">Cancel</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
